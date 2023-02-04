@@ -130,7 +130,7 @@ function scrollToViewOnNavClick(event) {
     if (event.target.nodeName === "A") {
       event.preventDefault();
       getSectionToNavigateFromMenuItem(event.target.parentElement)
-              .scrollIntoView({ block: "nearest", inline: "nearest", behavior: "smooth" })
+              .scrollIntoView({ block: "start", inline: "nearest", behavior: "smooth" })
     }
 }
 
